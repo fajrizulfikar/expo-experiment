@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.zulfikarf85.LQMobile"
@@ -32,6 +30,20 @@
       "eas": {
         "projectId": "eff32b96-c82f-4c92-8b6e-c32af88964e8"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-xxxxxxxx~xxxxxxxx",
+    "ios_app_id": "ca-app-pub-xxxxxxxx~xxxxxxxx"
   }
 }
